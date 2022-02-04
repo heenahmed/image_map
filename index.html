@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image map</title>
+	<style>
+		h1 {text-align: center;}
+		h3 {text-align: center;}
+		h1 {text-align: center;}
+		img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Heena Ahmed</h1>
+	<h3>Hover to see my projects name , and click on image portion for project link</h3>
+	<br>
+	<img
+	src=
+"myproject.png"
+	alt="Project_pictures"
+	usemap="#mymap"
+	width="610"
+	height="355"/>
+	<map name="mymap">
+	<area
+		shape="rect"
+		coords="0,0,193,163"
+		alt="EnglishLexicon"
+		href="https://github.com/heenahmed/EnglishLexicon"
+		onmouseover="myFunction('EnglishLexicon')"
+		onmouseout="myFunction('')"/>
+    <area
+		shape="rect"
+		coords="215,15,390,160"
+		alt="SunshinePublicSchool"
+		href="https://heenahmed.github.io/SunshinePublicSchool/"
+		onmouseover="myFunction('Sunshine Public School')"
+		onmouseout="myFunction('')"/>
+	<area
+		shape="rect"
+		coords="418,13,596,141"
+		alt="TicTacToe"
+		href="https://github.com/heenahmed/TicTacToe"
+		onmouseover="myFunction('TicTacToe')"
+		onmouseout="myFunction('')"/>
+    <area
+		shape="rect"
+		coords="12,189,186,330"
+		alt="Scientific_calc"
+		href="https://github.com/heenahmed/Scientific-calculator"
+		onmouseover="myFunction('Scientific calculator')"
+		onmouseout="myFunction('')"/>
+    <area
+		shape="rect"
+		coords="218,198,397,300"
+		alt="samagam"
+		href="https://heenahmed.github.io/samagam.github.io/#home"
+		onmouseover="myFunction('samangam : video calling web application')"
+		onmouseout="myFunction('')"/>
+    <area
+		shape="rect"
+		coords="417,187,590,322"
+		alt="Hotem_mngmnt"
+		href="https://github.com/heenahmed/Hotel-Management-project"
+		onmouseover="myFunction('Hotel management System')"
+		onmouseout="myFunction('')"/> 
+	</map>
+	<h1 id="info"></h1>
+	<script>
+	function myFunction(name) {
+		document.getElementById("info").innerHTML = name;
+	}
+	</script>
+</body>
+</html>
